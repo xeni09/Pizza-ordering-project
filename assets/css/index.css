@@ -1,0 +1,114 @@
+body {
+  font-family: "roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.slider {
+  width: 100%;
+  background: url("../img/slider.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  text-align: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  transition: height 0.8s ease;
+}
+@media only screen and (max-width: 900px) {
+  .slider {
+    height: 200px;
+  }
+}
+
+.btn-ingredients {
+      width: 170px;
+      background-color: white!important;
+      border: 1px solid #ced4da; /* Adding border to differentiate buttons */
+      transition: transform 0.2s;
+    }
+.btn-ingredients:hover {
+   
+   transform: scale(1.1);
+   border:2px solid #da9760;
+}
+
+.section1 {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff1da;
+  border: 2px solid #da9760 !important;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.section2 {
+  max-width: 800px;
+  background-color: #f4ffda;
+  border: 2px solid #bee068 !important;
+  padding: 40px 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.selected {
+  transform: scale(1.1);
+  border:2px solid #da9760!important;
+}
+
+
+
+.selected-ingredient {
+  display: inline-block;
+  padding: 5px;
+  margin-right: 5px;
+  background-color: #ddf995;
+  border: 1px solid #8bc949;
+  border-radius: 3px;
+}
+
+.remove-ingredient {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #dc6f35;
+}
+
+
+.ingredient-image {
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#orderPizza {
+  background-color: #8bc949;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 8px !important;
+  cursor: pointer;
+}
+
+
+.error-message-masa, .error-message-tamaño {
+  color: red;
+  font-size: 14px;
+  
+}
+
+
+@keyframes pop-up {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.01); }
+  100% { transform: scale(1); }
+}
+
+.error-message {
+  animation: pop-up 0.5s ease;
+}
+
+
+
